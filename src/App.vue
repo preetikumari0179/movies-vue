@@ -46,6 +46,6 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 0px;
-  color: #69c297;
+  color: #69c297
 }
 </style>
