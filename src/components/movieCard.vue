@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img :src="movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : placeholderImage"
+        <img :alt="movie.title" :src="movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : placeholderImage"
      class="Image-24">
      <div class="movie-details">
      <span class="Oceans-Eleven">
