@@ -1,11 +1,10 @@
 <template>
-    <div>
-    <div class="movie-content">
+
+<div class="balck-background-box">
     <div class="title">
-    <span >
-        {{title}}
-    </span>
+        <span>{{ title }}</span>
     </div>
+    <div v-if="items.length !== 0 " class="result">
         <Carousel :perPage="perPage">
             <Slide v-for="(item, index) in items" :key="index">
                 <movie-card :movie="item">
@@ -13,7 +12,10 @@
             </Slide>
         </Carousel>
     </div>
+    <div  v-else class="no-result">
+     No Record
     </div>
+</div>
 </template>
 <script>
 import { Carousel, Slide } from 'vue-carousel';
@@ -41,25 +43,5 @@ export default {
 }
 </script>
 <style lang="css">
-    .title {
-  font-family: Helvetica;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #69c297;
-  float: left;
-  padding: 16px
-    }
-    .movie-content {
-         background-color: #24242c;
-         padding: 5px;
-    margin: 20px 0px 100px 10px;
-    display: block
-    }
-    .VueCarousel {
-        display: block !important
-    }
+@import './../assets/styles/carousel.css';
 </style>

@@ -1,51 +1,12 @@
 <template>
   <div id="app">
     <div class="header">
-      <span class="Movie-Finder"> Movie Finder </span>
+      <span class="movie-finder"> Movie Finder </span>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background-color: #32313b;
-  overflow-x: hidden;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-.header {
-    width: 100%;
-    background-color: #24242c;
-    padding: 5px;
-    margin: 20px 0px 100px 10px;
-    height: 50px
-  }
-  .Movie-Finder {
-  width: 118px;
-  height: 23px;
-  font-family: Helvetica;
-  font-size: 19px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0px;
-  color: #69c297
-}
+@import './assets/styles/app.css';
 </style>
